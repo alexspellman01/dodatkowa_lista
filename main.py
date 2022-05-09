@@ -22,3 +22,4 @@ with open("logs.txt","r") as f:
                 
         print(new_line)
         print("text")
+        print("nowy commit")
