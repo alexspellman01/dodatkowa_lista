@@ -21,4 +21,4 @@ with open("logs.txt","r") as f:
                 break
                 
         print(new_line)
-        print(new_line)
+        print("text")
