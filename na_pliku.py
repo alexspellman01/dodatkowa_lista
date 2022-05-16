@@ -11,12 +11,13 @@ with open("logs.txt","r") as f:
                 non_repeated_line=line
             elif i ==0:
                 columns = line
-                # df = pd.DataFrame()
+                # df = pd.DataFrame() dodane
                 # df.to_csv("wynik_csv.csv",columns=line,index=False)
             else:
                 if line[0] == non_repeated_line[0]:
                     non_repeated_line[3]=float(line[3]) +float(non_repeated_line[3]) #duaration 
                     print(non_repeated_line)
+                    
             
             i+=1
             if i>10:
