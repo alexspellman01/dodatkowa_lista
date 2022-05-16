@@ -8,18 +8,20 @@ with open("logs.txt","r") as f:
             line = line.split("|")
             
             if i ==1:
-                new_line=line
+                non_repeated_line=line
             elif i ==0:
                 columns = line
                 # df = pd.DataFrame()
                 # df.to_csv("wynik_csv.csv",columns=line,index=False)
             else:
-                pass
+                if line[0] == non_repeated_line[0]:
+                    non_repeated_line[3]=float(line[3]) +float(non_repeated_line[3]) #duaration 
+                    print(non_repeated_line)
             
             i+=1
             if i>10:
                 break
                 
         print(new_line)
-        print("text")
-        print("nowy commit")
+
+     
